@@ -1,0 +1,126 @@
+/* ✅ General Page Styling */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9fafb;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+/* ✅ Main Container */
+#root {
+  width: 100%;
+  max-width: 480px;
+  background: white;
+  margin-top: 60px;
+  border-radius: 16px;
+  padding: 24px 32px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+}
+
+/* ✅ Heading */
+h1 {
+  text-align: center;
+  color: #0078d7;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+/* ✅ Input + Button Section */
+input[type="text"] {
+  width: 70%;
+  padding: 10px 12px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  transition: all 0.2s ease;
+  font-size: 1rem;
+}
+
+input[type="text"]:focus {
+  border-color: #0078d7;
+  box-shadow: 0 0 4px rgba(0, 120, 215, 0.3);
+}
+
+button {
+  background-color: #0078d7;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 14px;
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+/* ✅ Task List */
+.task-list {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 24px;
+}
+
+.task-item {
+  background-color: #f3f4f6;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  padding: 10px 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.2s ease;
+}
+
+.task-item:hover {
+  background-color: #e5e7eb;
+}
+
+/* ✅ Task Text */
+.task-item span {
+  flex: 1;
+  font-size: 1rem;
+}
+
+/* ✅ Task Buttons */
+.task-item button {
+  margin-left: 8px;
+  padding: 8px 12px;
+  font-size: 0.85rem;
+}
+
+/* Done Button Style */
+.task-item button:first-of-type {
+  background-color: #22c55e;
+}
+
+.task-item button:first-of-type:hover {
+  background-color: #16a34a;
+}
+
+/* Remove Button Style */
+.task-item button:last-of-type {
+  background-color: #ef4444;
+}
+
+.task-item button:last-of-type:hover {
+  background-color: #dc2626;
+}
+
+/* ✅ Completed Tasks */
+.task-item.done span {
+  text-decoration: line-through;
+  color: gray;
+}
