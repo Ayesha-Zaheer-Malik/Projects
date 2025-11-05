@@ -20,7 +20,7 @@ export function Fetching() {
 
   return (
     <>
-      <h2>Fetching...</h2>
+      <h2>Fetching.....</h2>
 
       <input
         type="text"
@@ -30,20 +30,20 @@ export function Fetching() {
       />
       <button onClick={handleFetch}>Search</button>
 
-      {/* Show error */}
+      
       {error && <p style={{ color: "red" }}>{error}</p>}
 
-      {/* Show data */}
+      
       {data && data.length > 0 ? (
         <div>
           <h3>User Details:</h3>
           {data.map((u) => (
             <div key={u.id} style={{ border: "1px solid gray", margin: "10px", padding: "10px" }}>
-              <p><strong>ID:</strong> {u.id}</p>
-              <p><strong>Name:</strong> {u.name}</p>
-              <p><strong>Username:</strong> {u.username}</p>
-              <p><strong>Email:</strong> {u.email}</p>
-              <p><strong>City:</strong> {u.address.city}</p>
+              <p>ID: {u.id}</p>
+              <p>Name: {u.name}</p>
+              <p>Username: {u.username}</p>
+              <p>Email: {u.email}</p>
+              <p>City: {u.address.city}</p>
             </div>
           ))}
         </div>
